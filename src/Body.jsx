@@ -132,7 +132,7 @@ export default function Body() {
             color="secondary"
             className={classes.Selector__formatterButton}
             onClick={() => {
-              const host = `/${language}/${formatter}/${encodeURI(
+              const host = `api/${language}/${formatter}/${encodeURI(
                 originalCode
               )}`;
               console.log("Host : ", host);
