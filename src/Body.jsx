@@ -137,7 +137,7 @@ export default function Body() {
               )}`;
               console.log("Host : ", host);
 
-              axios.get(host).then(function (response) {
+              axios.post(host).then(function (response) {
                 console.log("Response : ", response.data.result);
                 setFormattedCode(response.data.result);
               });
